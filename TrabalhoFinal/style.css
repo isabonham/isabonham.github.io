@@ -624,16 +624,19 @@ aside ul li:hover {
 
 .manifesto-text {
     width: 50%;
+    color: white
 }
 
 .manifesto-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: white
 }
 
 .manifesto-text p {
     font-size: 1.2em;
     margin-bottom: 10px;
+    color: white
 }
 
 .manifesto-video {
