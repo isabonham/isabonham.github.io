@@ -537,11 +537,13 @@ aside ul li:hover {
     font-weight: bold;
     line-height: 1.2;
     margin-right: 50px;
+    color: white
 }
 
 .about-text p {
     font-size: 1.2em;
     color: #666;
+    color: white
 }
 
 /* responsividade do hero*/
