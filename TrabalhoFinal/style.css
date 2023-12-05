@@ -37,7 +37,7 @@ header {
     align-items: center;
 
     background-color: var(--nivel1);
-    border-bottom: solid 1px #DBB800;
+    border-bottom: solid 1px #c3c019;
 
     position: sticky;
     top: 0;
@@ -152,11 +152,7 @@ nav p:hover,
     display: none;
 }
 
-@media screen and(max-width: 768px){
-    .header-r .menu-responsivo{
-        display:block;
-    }
-}
+
 
 /* ------ CABEÇALHO ACABA AQUI ------- */
 
@@ -261,6 +257,11 @@ nav p:hover,
     flex: 1 1 auto;
 }
 
+.apresentacao span {
+    color: #a10506;
+    padding-right: 100px;
+}
+
 .apresentacao #foto1 {
     width: 50%;
     height: 100%;
@@ -288,6 +289,119 @@ nav p:hover,
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+}
+
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    height: auto;
+    background-color: #c3c019;
+}
+
+.newsletter h1 {
+    padding-left: 30px;
+    padding-top: 30px;
+
+    font-size: 42px;
+    font-family: montserrat, sans-serif;
+}
+
+.newsletter input {
+    margin: 20px;
+    padding-left: 5px;
+    height: 45px;
+    padding-right: 725px;
+    border-radius: 50px;
+ 
+    font-size: 18px;
+}
+
+
+
+.newsletter p {
+    padding-left: 30px;
+    padding-top: 30px;
+    
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+}
+
+.newsletter button {
+    border-radius: 25px;
+    height: 52px;
+    width: 140px;
+
+    padding-left: 5px;
+
+    margin-top: 45px;
+
+    font-size: 18px; 
+
+    background-color: #1c2a33;
+    color: #fafaee;
+}
+
+/* Responsividade newsletter */
+@media screen and (max-width: 768px) {
+    .newsletter h1 {
+        font-size: 28px; 
+    }
+
+    .newsletter p {
+        font-size: 18px; 
+    }
+
+    .newsletter input {
+        padding-right: 10px; 
+    }
+}
+.newsletter ::placeholder{
+    font-size: 18px;
+}
+
+/* Qualide Fibra */
+.qualidades-fibra {
+    text-align: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+    white-space: nowrap;
+}
+
+.qualidades-fibra img {
+    width: 100%;
+    max-width: 150px; 
+    max-height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.qualidades-fibra .item {
+    display: inline-block;
+    width: 25%; 
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.qualidades-fibra p {
+    font-family: monteserrat, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+}
+/* Responsividade qualidades */
+@media (max-width: 768px){
+    .qualidades-fibra .item {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .qualidades-fibra .item img {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* CARDS DE PRODUTO */
@@ -573,7 +687,7 @@ aside ul li:hover {
 }
 
 .about-hero-highlight {
-    background-color: #FFD700;
+    background-color: #c3c019;
     padding: 30px;
     width: 50%;
     box-sizing: border-box;
@@ -614,10 +728,11 @@ aside ul li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8B0000;
+    background-color: #a10506;
     color: #fff;
-    padding: 50px;
-    border-radius: 10px;
+    padding: 90px;
+    height: 65vh;
+    border-radius: 1px;
 }
 
 .manifesto-text {
@@ -626,7 +741,7 @@ aside ul li:hover {
 }
 
 .manifesto-text h2 {
-    font-size: 2.5em;
+    font-size: 4.0em;
     margin-bottom: 20px;
     color: #fff;
 }
@@ -691,7 +806,7 @@ aside ul li:hover {
 }
 
 .process-link {
-    background-color: #FFD700;
+    background-color: #DBB800;
     color: #333;
     text-decoration: none;
     padding: 10px 20px;
@@ -701,7 +816,7 @@ aside ul li:hover {
 }
 
 .process-link-primario {
-    background-color: #FFD700;
+    background-color: #DBB800;
     color: #333;
     text-decoration: none;
     padding: 10px 20px;
@@ -714,7 +829,7 @@ aside ul li:hover {
 }
 
 .process-link-primario:hover {
-    background-color: #f8d925;
+    background-color: #fcd601;
     font-weight: 700;
     transition: all .3s ease-out;
 }
@@ -899,20 +1014,22 @@ aside ul li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 .cc>h1 {
     font-size: 40px;
+    padding-left: 80px;
 }
 
 .text-p {
-    font-size: 20px;
+    font-size: 20.2px;
+    padding-left: 80px;
 }
 
 .df {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 }
 
@@ -964,16 +1081,22 @@ aside ul li:hover {
 
 .contact-form-container {
     max-width: 1046px;
-    background-color: #FFD700;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #c3c019;
+    padding: 85px; /* AUMENTAR A AREA DO FORMULARIO */
+    border-radius: 1px;
     margin: auto;
+    height: 75vh; /*altura do formulario */
+}
+
+.contact-form-container h2 {
+    font-size: 35px;
+    font-style: inherit;
 }
 
 .contact-form-container h2,
 .contact-form-container p {
     color: #333;
-    text-align: center;
+    margin: 0;
 }
 
 form {
@@ -982,7 +1105,7 @@ form {
 }
 
 form label {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 form input[type="email"],
