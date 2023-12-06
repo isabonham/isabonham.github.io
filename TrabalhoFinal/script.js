@@ -1,5 +1,5 @@
 const produtos = [
-  {name: 'Lorem ipsum dolor sit amet', image: 'Ativos/Produtos/RedeCadeira.jpg', preco: 'R$ 300,00', link: 'produto.html'},
+  {name: 'Lorem ipsum dolor sit amet', image: 'Ativos/Produtos/dya-1.jpg', preco: 'R$ 300,00', link: 'produto.html'},
   {name: 'Lorem ipsum dolor sit amet', image: 'Ativos/Produtos/CadeiraRede.jpg', preco: 'R$ 300,00', link: 'produto.html'},
   {name: 'Lorem ipsum dolor sit amet', image: 'Ativos/Produtos/RedeCadeira.jpg', preco: 'R$ 300,00', link: 'produto.html'},
   {name: 'Lorem ipsum dolor sit amet', image: 'Ativos/Produtos/CadeiraRede.jpg', preco: 'R$ 300,00', link: 'produto.html'},
