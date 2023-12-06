@@ -148,6 +148,10 @@ nav p:hover,
     flex: 1 1 auto;
 }
 
+#sanduiche {
+    display: none;
+}
+
 .menu-sanduiche {
     display: none;
 }
@@ -306,7 +310,7 @@ nav p:hover,
     font-family: montserrat, sans-serif;
 }
 
-.newsletter input {
+/* .newsletter input {
     margin: 20px;
     padding-left: 5px;
     height: 45px;
@@ -314,7 +318,7 @@ nav p:hover,
     border-radius: 50px;
  
     font-size: 18px;
-}
+} */
 
 
 
@@ -327,13 +331,15 @@ nav p:hover,
 }
 
 .newsletter button {
-    border-radius: 25px;
+    border-radius: 5px;
     height: 52px;
     width: 140px;
 
-    padding-left: 5px;
+    padding-inline: 10px;
 
-    margin-top: 45px;
+    margin-top: 25px;
+    margin-bottom: 10px;    
+    margin-left: 28px;
 
     font-size: 18px; 
 
@@ -1080,23 +1086,27 @@ aside ul li:hover {
 /*---------------------------*/
 
 .contact-form-container {
-    max-width: 1046px;
+    /* max-width: 1046px; */
+    
     background-color: #c3c019;
     padding: 85px; /* AUMENTAR A AREA DO FORMULARIO */
     border-radius: 1px;
-    margin: auto;
+    width: 1064px;
     height: 75vh; /*altura do formulario */
+    
 }
 
 .contact-form-container h2 {
     font-size: 35px;
     font-style: inherit;
+
 }
 
 .contact-form-container h2,
 .contact-form-container p {
     color: #333;
-    margin: 0;
+    margin-top: 0;
+
 }
 
 form {
