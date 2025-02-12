@@ -96,7 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-function toggleMenu() {
-    const nav = document.querySelector("nav");
-    nav.classList.toggle("active");
-}
+// Seleciona o ícone do menu e o menu de navegação
+const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+// Adiciona um evento de clique ao ícone do menu
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Alterna a classe 'active' no menu
+});
+

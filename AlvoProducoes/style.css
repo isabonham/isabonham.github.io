@@ -59,6 +59,20 @@ header nav a:hover {
     color: #fff;
 }
 
+.menu-icon {
+    display: none; /* Esconde o ícone em telas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #e8ff1a;
+    margin: 4px 0;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -527,19 +541,17 @@ header nav a:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: auto;
-        padding: 10px 15px;
+        padding: 15px 10px; /* Reduz o padding */
     }
 
     header .logo img {
-        margin-left: 0;
-        margin-right: 0;
-        height: 35px; /* Reduz um pouco o tamanho do logo */
+        margin-left: 20px; /* Ajusta a margem do logo */
     }
 
+    .menu-icon {
+        display: flex; /* Mostra o ícone do menu hambúrguer */
+    }
+    
     .hamburguer {
         display: block;
     }
@@ -564,19 +576,24 @@ header nav a:hover {
         font-size: 18px;
     }
 
+    header nav {
+        display: none; /* Esconde o menu em telas pequenas */
+        flex-direction: column;
+        background-color: #0212ff;
+        position: absolute;
+        top: 80px; /* Alinha abaixo do header */
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
     nav.active {
         display: flex;
     }
 
-    header nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin: 10px 0 0 0;
-    }
-
     header nav a {
-        font-size: 14px;
+        margin: 10px 0; /* Espaçamento entre os links */
     }
 
     .hero-content h1 {
@@ -1007,20 +1024,4 @@ header nav a:hover {
     .footer-bottom {
         font-size: 0.8rem;
     }
-}
-
-
-
-
-
-
-/* Para telas menores que 768px */
-@media (max-width: 768px) {
-    
-
-    
-
-    
-
-    
 }
