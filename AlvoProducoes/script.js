@@ -96,23 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.querySelector(".menu-toggle").addEventListener("click", function() {
-  document.querySelector("nav").classList.toggle("active");
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-    });
-
-    // Fecha o menu ao clicar em um link
-    document.querySelectorAll(".nav-menu a").forEach(link => {
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("active");
-        });
-    });
-});
+function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+}
