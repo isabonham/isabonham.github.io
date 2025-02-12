@@ -25,6 +25,18 @@ header .logo img {
     margin-right: 20px; 
 }
 
+.hamburguer {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #e8ff1a;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 header nav {
     display: flex;
     gap: 30px; 
@@ -515,7 +527,8 @@ header nav a:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         height: auto;
         padding: 10px 15px;
@@ -525,6 +538,34 @@ header nav a:hover {
         margin-left: 0;
         margin-right: 0;
         height: 35px; /* Reduz um pouco o tamanho do logo */
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 18, 255, 0.95);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 15px;
+        transition: all 0.3s ease;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    nav.active {
+        display: flex;
     }
 
     header nav {
@@ -966,4 +1007,20 @@ header nav a:hover {
     .footer-bottom {
         font-size: 0.8rem;
     }
+}
+
+
+
+
+
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    
+
+    
+
+    
+
+    
 }
