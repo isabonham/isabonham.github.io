@@ -554,15 +554,6 @@ header nav a:hover {
 
     .menu-toggle {
         display: block;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-        color: #e8ff1a;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        z-index: 1001;
     }
 
     nav {
@@ -597,16 +588,6 @@ header nav a:hover {
         text-align: center;
         padding: 10px 0;
         z-index: 999;
-    }
-
-    .nav-menu ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }    
-
-    .nav-menu li {
-        padding: 10px 0;
     }
 
     .nav-menu a {
